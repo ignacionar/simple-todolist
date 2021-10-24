@@ -2,6 +2,11 @@ const form = document.querySelector("form");
 const input = document.querySelector("input")
 input.setAttribute("placeholder", "Write your items!")
 const container = document.querySelector("#container")
+const body = document.querySelector("body")
+const h1 = document.createElement("h1")
+body.insertBefore(h1, form)
+h1.innerText = "✏  ToDo List " 
+h1.style.textAlign = "center"
 
 // TESTING remove()
 const remove = container.querySelector("div")
